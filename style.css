@@ -1,0 +1,130 @@
+.search-bar {
+          width: 200px;
+          margin-left: auto;
+        }
+
+        .search-icon {
+           width: 16px;
+           height: 16px;
+            display: block;
+        }
+
+        .btn-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-link.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+    content: "";
+    border-top: 5px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+      .nav-link.dropdown-toggle:hover {
+    color: burlywood;
+    cursor: pointer;
+}
+
+  .nav-link:hover{
+    color: burlywood;
+    cursor: pointer;
+  }
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+
+/* Establish the carousel as the positioning reference */
+.carousel-overlay {
+    position: relative;
+}
+
+/* Stretch controls across the entire carousel */
+.carousel-overlay-controls {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Allow individual positioning of the buttons */
+.carousel-overlay-controls > div:first-child {
+    display: contents;
+}
+
+/* Make buttons clickable */
+.carousel-overlay-controls button {
+    pointer-events: auto;
+}
+
+/* Position previous button on the left */
+.carousel-prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+/* Position next button on the right */
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/* Position indicators at the bottom centre */
+.carousel-overlay-controls .carousel-indicators {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    margin: 0;
+    width: auto;
+    pointer-events: auto;
+}
+
+/* Give every carousel slide the same height */
+.carousel-item {
+    height: 550px;
+}
+
+/* Make images fill the available space */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+  
+
+        @media (max-width: 991.98px) {
+
+    .search-form {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-bar {
+        flex: 1;
+        min-width: 0;
+    }
+
+}
+
+    @media (max-width: 768px) {
+    .carousel-item {
+        height: 350px;
+    }
+}
